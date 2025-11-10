@@ -66,16 +66,48 @@ This project demonstrates how AI can be embedded into EV systems to create smart
 
 ---
 
-## 🔮 Week 2 Goals — _RAG Pipeline Development_
+🧠 Week 2 Progress — RAG Pipeline Development
+🚀 Key Improvisations
 
-- Implement **RAG (Retrieval-Augmented Generation)** for contextual responses.  
-- Store EV text chunks in a **vector database (ChromaDB)**.  
-- Connect RAG pipeline with the OpenAI API via LangChain.  
-- Test and refine retrieval accuracy for EV queries.  
-- Begin integrating voice interface.
+Implemented RAG architecture using LangChain and ChromaDB.
 
----
+Integrated HuggingFace Embeddings (MiniLM model) for semantic text representation.
 
+Built Conversational Retrieval Chain for context-aware question answering.
+
+Optimized Text Chunking: Improved context retention using RecursiveCharacterTextSplitter.
+
+Connected RAG with OpenAI GPT models for accurate and contextual responses.
+
+Tested complete query flow — from user query → retrieval → LLM response.
+
+Improved data pipeline efficiency and ensured reproducibility.
+
+✅ Outcome
+
+By the end of Week 2, a functional RAG-based EV assistant prototype was achieved that can understand and respond to EV-related queries using the structured knowledge base.
+
+💻 Tech Stack
+Category	Tools / Libraries
+Language	Python 3.11+
+AI Models	OpenAI GPT / Llama 3
+Frameworks	LangChain / LlamaIndex
+Vector Database	ChromaDB
+Speech	SpeechRecognition, gTTS
+Development	VS Code, Jupyter Notebook
+Version Control	Git + GitHub
+
+🔮 Week 3 Goals — Voice Interface & Integration
+
+Integrate voice input/output with the RAG pipeline.
+
+Add speech-to-text and text-to-speech capabilities.
+
+Enhance conversation memory and contextual understanding.
+
+Build a minimal GUI or terminal interface for user interaction.
+
+Begin preparing for deployment (local or web app).
 ## 📁 Project Structure
 
 EV_VOICE_ASSISTANT/
@@ -99,5 +131,6 @@ EV_VOICE_ASSISTANT/
 │
 ├── requirements.txt
 └── README.md
+
 
 
